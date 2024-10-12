@@ -86,7 +86,7 @@ sed -i 's/"USB 打印服务器"/"打印服务"/g' `egrep "USB 打印服务器" -
 sed -i 's/"Web 管理"/"Web管理"/g' `egrep "Web 管理" -rl ./`
 sed -i 's/"管理权"/"改密码"/g' `egrep "管理权" -rl ./`
 sed -i 's/"带宽监控"/"监控"/g' `egrep "带宽监控" -rl ./`
-# git clone --depth=1 https://github.com/zijieKwok/luci-theme-alpha package/luci-theme-alpha
+git clone --depth=1 https://github.com/zijieKwok/luci-theme-alpha package/luci-theme-alpha
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间(根据编译机型变化,自行调整删除名称)
